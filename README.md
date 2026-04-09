@@ -22,3 +22,11 @@ This repository's contents, protected by patent, are solely for personal learnin
 Individual users are permitted to use this repository for learning and research purposes, provided that they abide by applicable laws. Should you utilize this project in your research, please cite our work as follows:
 
 > Zhou, J., Hang, Y., Bin, H. et al. Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-language-model Guided Multimodal Framework.
+
+## Introduction
+
+## Model
+
+## Deployment
+
+## Requirements

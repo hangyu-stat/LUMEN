@@ -29,7 +29,7 @@ Pulmonary function testing (PFT) is the clinical standard for diagnosing chronic
 Here, we present LUMEN, a unified multimodal artificial intelligence framework for the automated prediction of both obstructive and restrictive ventilatory impairments. The framework leverages a large language model with medical chain-of-thought prompting to distill heterogeneous CT reports into structured reasoning features, which are then fused with CT image representations via a bidirectional cross-attention mechanism. To mitigate class imbalance and ensure the reliability of the generated reasoning text, we implemented a confidence-aware three-stage training strategy. Validated on 5,401 patients from three medical centers, LUMEN accurately identified high-risk populations based on multimodal clinical characteristics (i.e., CT images, CT reports, etc), consistently outperforming state-of-the-art unimodal and multimodal baselines.
 ## Model
 
-![LUMEN-CATS.png](https://github.com/hangyu-stat/LUMEN/edit/main/images/LUMEN-CATS.png?raw=true)
+![LUMEN-CATS.png]
 ## Deployment
 
 ## Requirements

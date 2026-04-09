@@ -9,7 +9,7 @@ Codes for "Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-l
 - [Requirements](#requirements)
 - [Installation](#installation)
 
-
+The proposed model for pulmonary dysfunction has been deployed at [seeyourlung.com](https://seeyourlung.com).
 ## Use Terms
 
 ### Intellectual Property and Rights Notice
@@ -30,6 +30,9 @@ Here, we present LUMEN, a unified multimodal artificial intelligence framework f
 ## Model
 The overall architecture of the proposed LUMEN model is shown in Figure 1A. The model takes as input preprocessed coronal CT images, key CoT summary text, and a vector of basic patient information, including gender, age, height and weight. The outputs are three binary variables corresponding to the three diagnostic tasks. LUMEN consists of one auxiliary module and four main modules: an LLM assistant module, an image feature extraction module, a text feature embedding module, a feature fusion module, and an output layer. Figure 1B shows the training curriculum, CATS. This three-stage strategy enables the LUMEN to perceive the quality of large language model reasoning, achieving coordination and synergy across all modules.
 ![LUMEN-CATS.png](images/LUMEN-CATS.png)
+
+We provide the trained models for various 3D medical image analysis tasks, which can be downloaded from [BaiduYun](通过网盘分享的文件：LUMEN-ckpts
+链接: https://pan.baidu.com/s/1uqlp1tGNcDFIUr3itBmx3A?pwd=RUCS)(verification code: RUCS).
 ## Deployment
 To facilitate clinical adoption, we deployed the LUMEN model on our previously developed online platform [seeyourlung.com](https://seeyourlung.com), enabling the system not only to infer pathological subtypes of pulmonary nodules but also to predict pulmonary dysfunction directly from CT imaging. The snapshots of the platform are displayed in Figure 2. This platform enables an automated, multimodal assessment of pulmonary dysfunction through an intuitive interface. Users first enter basic demographic information (date of birth, sex, height, and weight) and upload chest CT scans in DICOM format. After that, the CT-based model automatically estimates the probabilities of three major forms of pulmonary dysfunction and provides a corresponding diagnostic result. If the user also provides the free-text CT report, the platform invokes the CT+CTR model developed in this study to provide refined predictions. An optional LLM-assisted mode is also available, when selected, DeepSeek-V3.2-Exp performs automated clinical reasoning, after which the final prediction is generated using the proposed LUMEN model. Among the inputs, demographic information and CT scans are required. The CT report and LLM inference are optional. To protect patient privacy, all uploaded DICOM files undergo automated de-identification upon submission, and no user-uploaded data are stored on the platform.
 ![seeyourlung-screenshot.png](images/seeyourlung-screenshot.png)

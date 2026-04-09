@@ -36,30 +36,30 @@ To facilitate clinical adoption, we deployed the LUMEN model on our previously d
 ## Requirements
 The code is written in Python and requires the following packages: 
 
-*Python==3.8.12
-*matplotlib==3.5.1
-*matplotlib-inline==0.1.3
-*numpy==1.23.5
-*openai==1.65.5
-*opencv-python==4.5.5.64
-*openpyxl==3.1.5
-*pandas==1.4.1
-*pkuseg==0.0.25
-*pydicom==2.4.4
-*PyWavelets==1.4.1
-*scikit-image==0.21.0
-*scikit-learn==1.0.2
-*scipy==1.8.0
-*seaborn==0.11.2
-*SimpleITK==2.3.0
-*sklearn==0.0
-*torch==1.11.0+cu113
-*torchaudio==0.11.0+cu113
-*torchinfo==1.8.0
-*torchvision==0.12.0+cu113
-*tornado==6.1
-*tqdm==4.67.1
-*transformers==4.46.3
+* Python==3.8.12
+* matplotlib==3.5.1
+* matplotlib-inline==0.1.3
+* numpy==1.23.5
+* openai==1.65.5
+* opencv-python==4.5.5.64
+* openpyxl==3.1.5
+* pandas==1.4.1
+* pkuseg==0.0.25
+* pydicom==2.4.4
+* PyWavelets==1.4.1
+* scikit-image==0.21.0
+* scikit-learn==1.0.2
+* scipy==1.8.0
+* seaborn==0.11.2
+* SimpleITK==2.3.0
+* sklearn==0.0
+* torch==1.11.0+cu113
+* torchaudio==0.11.0+cu113
+* torchinfo==1.8.0
+* torchvision==0.12.0+cu113
+* tornado==6.1
+* tqdm==4.67.1
+* transformers==4.46.3
 
 You can just run the following command to install the required packages：
 * pip install -r requirements.txt

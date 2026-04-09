@@ -24,7 +24,9 @@ Individual users are permitted to use this repository for learning and research 
 > Zhou, J., Hang, Y., Bin, H. et al. Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-language-model Guided Multimodal Framework.
 
 ## Introduction
+Pulmonary function testing (PFT) is the clinical standard for diagnosing chronic respiratory diseases, yet its utility is often limited by accessibility constraints and patient compliance. While computed tomography (CT) captures structural lung abnormalities associated with pulmonary dysfunction, existing deep-learning diagnostic models typically rely solely on imaging or struggle to effectively integrate unstructured clinical text. 
 
+Here, we present LUMEN, a unified multimodal artificial intelligence framework for the automated prediction of both obstructive and restrictive ventilatory impairments. The framework leverages a large language model with medical chain-of-thought prompting to distill heterogeneous CT reports into structured reasoning features, which are then fused with CT image representations via a bidirectional cross-attention mechanism. To mitigate class imbalance and ensure the reliability of the generated reasoning text, we implemented a confidence-aware three-stage training strategy. Validated on 5,401 patients from three medical centers, LUMEN accurately identified high-risk populations based on multimodal clinical characteristics (i.e., CT images, CT reports, etc), consistently outperforming state-of-the-art unimodal and multimodal baselines.
 ## Model
 
 ## Deployment

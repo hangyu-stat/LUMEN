@@ -34,3 +34,32 @@ The overall architecture of the proposed LUMEN model is shown in Figure 1A. The 
 To facilitate clinical adoption, we deployed the LUMEN model on our previously developed online platform [seeyourlung.com](https://seeyourlung.com), enabling the system not only to infer pathological subtypes of pulmonary nodules but also to predict pulmonary dysfunction directly from CT imaging. The snapshots of the platform are displayed in Figure 2. This platform enables an automated, multimodal assessment of pulmonary dysfunction through an intuitive interface. Users first enter basic demographic information (date of birth, sex, height, and weight) and upload chest CT scans in DICOM format. After that, the CT-based model automatically estimates the probabilities of three major forms of pulmonary dysfunction and provides a corresponding diagnostic result. If the user also provides the free-text CT report, the platform invokes the CT+CTR model developed in this study to provide refined predictions. An optional LLM-assisted mode is also available, when selected, DeepSeek-V3.2-Exp performs automated clinical reasoning, after which the final prediction is generated using the proposed LUMEN model. Among the inputs, demographic information and CT scans are required. The CT report and LLM inference are optional. To protect patient privacy, all uploaded DICOM files undergo automated de-identification upon submission, and no user-uploaded data are stored on the platform.
 ![seeyourlung-screenshot.png](images/seeyourlung-screenshot.png)
 ## Requirements
+The code is written in Python and requires the following packages: 
+
+*Python==3.8.12
+*matplotlib==3.5.1
+*matplotlib-inline==0.1.3
+*numpy==1.23.5
+*openai==1.65.5
+*opencv-python==4.5.5.64
+*openpyxl==3.1.5
+*pandas==1.4.1
+*pkuseg==0.0.25
+*pydicom==2.4.4
+*PyWavelets==1.4.1
+*scikit-image==0.21.0
+*scikit-learn==1.0.2
+*scipy==1.8.0
+*seaborn==0.11.2
+*SimpleITK==2.3.0
+*sklearn==0.0
+*torch==1.11.0+cu113
+*torchaudio==0.11.0+cu113
+*torchinfo==1.8.0
+*torchvision==0.12.0+cu113
+*tornado==6.1
+*tqdm==4.67.1
+*transformers==4.46.3
+
+You can just run the following command to install the required packages：
+* pip install -r requirements.txt

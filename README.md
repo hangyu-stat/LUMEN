@@ -9,7 +9,7 @@ Codes for "Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-l
 - [Requirements](#requirements)
 - [Installation](#installation)
 
-The proposed model for pulmonary dysfunction has been deployed at [seeyourlung.com](https://seeyourlung.com).
+The proposed model for pulmonary dysfunction prediction based on multimodal CT data has been deployed at [seeyourlung.com](https://seeyourlung.com).
 ## Use Terms
 
 ### Intellectual Property and Rights Notice

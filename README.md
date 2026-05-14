@@ -1,5 +1,5 @@
 # LUMEN
-Codes for "Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-language-model Guided Multimodal Framework"
+Codes for "LUMEN: an LLM-assisted multimodal AI framework for automatic pulmonary dysfunction diagnosis using chest CT"
 
 ## Contents
 - [Use Terms](#use-terms)

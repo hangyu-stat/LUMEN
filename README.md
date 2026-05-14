@@ -21,7 +21,7 @@ This repository's contents, protected by patent, are solely for personal learnin
 ### Terms for Personal Learning and Academic Research
 Individual users are permitted to use this repository for learning and research purposes, provided that they abide by applicable laws. Should you utilize this project in your research, please cite our work as follows:
 
-> Zhou, J., Hang, Y., Bin, H. et al. Prediction of Pulmonary Dysfunction from Chest CT Scans via a Large-language-model Guided Multimodal Framework.
+> Zhou, J., Hang, Y., Bin, H. et al. LUMEN: an LLM-assisted multimodal AI framework for automatic pulmonary dysfunction diagnosis using chest CT.
 
 ## Introduction
 Pulmonary function testing (PFT) is the clinical standard for diagnosing chronic respiratory diseases, yet its utility is often limited by accessibility constraints and patient compliance. While computed tomography (CT) captures structural lung abnormalities associated with pulmonary dysfunction, existing deep-learning diagnostic models typically rely solely on imaging or struggle to effectively integrate unstructured clinical text. 
